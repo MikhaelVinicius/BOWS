@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atualizar Usuário</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Atualizar Usuário</h1>
+    <form id="userForm">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="sobrenome">Sobrenome:</label><br>
+        <input type="text" id="sobrenome" name="sobrenome"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+    $(document).ready(function(){
+        $("#userForm").on('submit', function(event){
+            event.preventDefault();
+            doPost();
+        });
+    });
+
+    function doGet() {
+        $.ajax({
+            url: '/user/' + $('#id').val(),
+            type: 'GET',
+            success: function(data) {
+                // preencha os campos do formulário com os dados do usuário
+                $('#nome').val(data.nome);
+                $('#sobrenome').val(data.sobrenome);
+                $('#email').val(data.email);
+                $('#senha').val(data.senha);
+            }
+        });
+    }
+
+    function doPost() {
+        var user = {
+            nome: $('#nome').val(),
+            sobrenome: $('#sobrenome').val(),
+            email: $('#email').val(),
+            senha: $('#senha').val()
+        };
+
+        $.ajax({
+            url: '/user/' + $('#id').val(),
+            type: 'PUT',
+            contentType: 'application/json',
+            data: JSON.stringify(user),
+            success: function(data) {
+                alert('Usuário atualizado com sucesso!');
+            }
+        });
+    }
+    </script>
+</body>
+</html>

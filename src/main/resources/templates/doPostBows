@@ -1,0 +1,43 @@
+<!doctype>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cadastro</title>
+</head>
+<body>
+	<h1>Cadastramento de espécime</h1>
+	<form method="POST">
+		<label>Nome da nova espécie:</label> 
+		<input type="text" name="name" alt="Insira o nome da nova arma biológica" required><br><br>
+		<label>Criado por:</label>
+		<input type="text" name="autor" alt="Insira o nome do autor" required><br><br>
+		<label for="organização">Organização:</label>
+        <select id="organização" name="organizacao">
+          <option value="umbrella">Umbrella Corporation</option>
+          <option value="conections">The Conections</option>
+          <option value="iluminados">Los Iluminados</option>
+          <option value="tricell">Tricell</option>
+          <option value="neo-umbrella">Neo-Umbrella</option>
+        </select><br><br>
+		<label for="agente_biologico">Agente biológico derivado:</label>
+        <select id="bio_agente" name="bio_agente">
+          <option value="T-Virus">T-Virus</option>
+          <option value="G-Virus">Ouroborus</option>
+          <option value="Megamiceto">Megamiceto</option>
+          <option value="T-Veronica">T-Veronica</option>
+          <option value="Las Plagas">Las plagas</option>
+        </select><br><br>
+		
+		<label>Encontrado em:</label>
+		<input type="text" name="localizacao" alt="Insira o nome do local" required><br><br>
+		<label>Insira informaçãoes:</label><br>
+		<textarea type="" name="info" alt="Insira as infroamções" rows="10" cols="70" required></textarea><br><br>
+		<input type="submit" name="Cadastrar">
+	</form>
+
+
+</body>
+</html>
+
