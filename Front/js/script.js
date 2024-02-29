@@ -14,14 +14,20 @@ $(document).ready(() => {
     const $menuUser = $("#menu-user");
     const $userMenuOpcao = $(".menu-user-opcao");
 
+    const $dados = $("#dados-container");
+    const $dadosSecundarios=$("#dados-secundarios");
+
 
     const $imagensInf = $("#segunda-imagem");
     const $bowsImage = $("#bows-image");
 
 
+
+
   $registraMenuOpcao.hide()
   $userMenuOpcao.hide()
   $aceessMenuOpcao.hide()
+  $dadosSecundarios
 
     $registerButton.on('mouseenter', () => {
      
@@ -53,7 +59,7 @@ $(document).ready(() => {
 
     $imagensInf.on('mouseenter',()=>{
         $imagensInf.animate({
-            height: '75%',width:'75%' } , 800);
+            height: '80%',width:'80%' } , 800);
             $imagensInf.on('mouseleave',()=>{
                 $imagensInf.animate({
                     height: '60%', width:'60%' } , 800);
@@ -66,9 +72,13 @@ $(document).ready(() => {
     $bowsImage.on('mouseenter',()=>{
         $bowsImage.animate({
             height: '100%',width:'100%' } , 800);
+            $dados.hide(800);
+            $dadosSecundarios.show(800)
             $bowsImage.on('mouseleave',()=>{
                 $bowsImage.animate({
                     height: '60%', width:'60%' } , 800);
+                    $dadosSecundarios.hide();
+                    $dados.show(800);
             })
     })
 
