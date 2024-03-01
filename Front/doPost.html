@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro BOWS</title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  
+
+    <body>
+
+        <header>      
+            <h2 class="Titulo">Umbrella Database</h2>
+            
+            
+            <div class="menu" id="register-button">
+                
+                <a>Registrar BOWS 
+                <ol id="menu-registrar" href="#" >
+                    <div class="menu-registra-opcao"><a>Registrar nova Bio-Arma</a></div>
+                    <div class="menu-registra-opcao"><a>Registrar novo agente biólogico</a></div>
+                    <div class="menu-registra-opcao"><a>Registrar antidotos, vacinas e antivírus</a></div>
+                </ol>
+            </a>
+            </div>
+            
+            <div class="menu" id="access-button">
+            
+                <a>Acessar dados de BOWS
+                    <ol id="menu-acessar" href="#" >
+                        <div class="menu-acessar-opcao"><a>Acessar BOWS</a></div>
+                        <div class="menu-acessar-opcao"><a>Acessar espécimes acidentais</a></div>
+                    </ol>
+                </a>
+            </div>
+            
+            <div class="menu" id="user-button">
+                <a>User 
+                    <ol id="menu-user" href="#" >
+                        <div class="menu-user-opcao"><a>Registrar usuário</a></div>
+                        <div class="menu-user-opcao"><a>Login</a></div>
+                    </ol>
+                </a>
+            </div>
+            
+            
+              
+            </header> 
+
+            <div id="formulario-container">
+                <form id="myForm">
+            
+                    <label for="fnome">Nome da espécime: </label><br><br>
+                    <input type="text" id="fnome" name="name"><br><br>
+            
+                    <label for="fautor">Autor: </label><br><br>
+                    <input type="text" id="fautor" name="autor"><br><br>
+            
+                    <label for="fOrg">Organização: </label><br><br>
+                    <input type="text" id="fOrg" name="organizacao"><br><br>
+            
+                    <label for="floc">Localizado em: </label><br><br>
+                    <input type="text" id="floc" name="localizado"><br><br>
+            
+                    <label for="fbio">Agente biológico: </label><br><br>
+                    <input type="text" id="fbio" name="agente_biologico"><br><br><br>
+                    
+                    <label for="fInfo">Descrição da espécie</label><br><br>
+                    
+            
+                    <textarea for="fInfo" id="fInfo" name="info" rows="10" cols="100">
+                        Descreva a espécime aqui...
+                    </textarea><br><br>
+            
+                    <input type="submit" value="Submit">
+            
+                </form>
+            </div>
+            
+            <div id="image-container">
+                <label for="fInfo">Insira uma imagem aqui</label><br><br>
+                <input id="imageInput" type="image" src="imagens/umbrella.png" alt="Submit" width="48" height="48">
+             </div>
+
+          
+
+             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+             <script src="js/script.js"></script>
+
+    </body>
+</html>

@@ -28,6 +28,8 @@ header{
     
 }
 
+
+
 #bows-image{
 
     background-color: rgba(41,180,179,0.1);
@@ -87,5 +89,45 @@ header{
     border: 2px solid #528396;
     margin: 5%;
     
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#formulario-container{
+    font-family:'Courier New', Courier, monospace;
+    text-align: justify;
+    margin: 2%;
+    width: 50%;
+    float: left;
+
+    
+    
+    
+}
+
+#imageInput{
+
+    background-color: rgba(41,180,179,0.1);
+    border: 2px solid #528396;
+    width: 60%;
+    height: 60%;
+    opacity: 0.2;
 
 }

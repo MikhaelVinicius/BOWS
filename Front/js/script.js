@@ -83,6 +83,23 @@ $(document).ready(() => {
     })
 
 
-
+    $("#myForm").on('submit', function(e){
+        e.preventDefault();
+        var formData = $(this).serializeArray();
+        var data = {};
+        $(formData).each(function(index, obj){
+            data[obj.name] = obj.value;
+        });
+        $.ajax({
+            url: '/bows/doPost',
+            type: 'post',
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function() {
+                alert("Formulário enviado com sucesso!");
+            }
+        });
+    });
+    
 
 });

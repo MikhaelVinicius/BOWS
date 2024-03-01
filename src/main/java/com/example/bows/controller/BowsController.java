@@ -9,6 +9,7 @@ import com.example.bows.model.services.BowsRepository;
 
 import java.util.List;
 
+
 @RestController
 @RequestMapping("/bows")
 public class BowsController {
@@ -63,4 +64,12 @@ public class BowsController {
         bowsRepository.deleteById(id);
         return ResponseEntity.noContent().build();
     }
+
+    @PostMapping("/doPost")
+    public ResponseEntity<Bows> submitForm(@RequestBody Bows bows) {
+        Bows savedBows = bowsRepository.save(bows);
+        return ResponseEntity.ok(savedBows);
+    }
+
+    
 }
