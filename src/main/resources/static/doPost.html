@@ -2,8 +2,9 @@
 <html>
     <head>
         <title>Registro BOWS</title>
-        <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
     <link rel="stylesheet" href="css/style.css">
   </head>
   
@@ -29,7 +30,7 @@
             
                 <a>Acessar dados de BOWS
                     <ol id="menu-acessar" href="#" >
-                        <div class="menu-acessar-opcao"><a>Acessar BOWS</a></div>
+                        <div class="menu-acessar-opcao"><a href="doGet.html">Acessar BOWS</a></div>
                         <div class="menu-acessar-opcao"><a>Acessar espécimes acidentais</a></div>
                     </ol>
                 </a>
@@ -49,7 +50,7 @@
             </header> 
 
             <div id="formulario-container">
-                <form id="myForm">
+                <form id="myForm"  action="#" method="post">
             
                     <label for="fnome">Nome da espécime: </label><br><br>
                     <input type="text" id="fnome" name="name"><br><br>
@@ -73,7 +74,7 @@
                         Descreva a espécime aqui...
                     </textarea><br><br>
             
-                    <input type="submit" value="Submit">
+                    <button type="submit">Enviar</button>
             
                 </form>
             </div>
@@ -81,11 +82,12 @@
             <div id="image-container">
                 <label for="fInfo">Insira uma imagem aqui</label><br><br>
                 <input id="imageInput" type="image" src="imagens/umbrella.png" alt="Submit" width="48" height="48">
+                
              </div>
 
           
 
-             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="*"></script>
              <script src="js/script.js"></script>
 
     </body>

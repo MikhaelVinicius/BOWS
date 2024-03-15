@@ -131,3 +131,14 @@ header{
     opacity: 0.2;
 
 }
+
+
+#buscar-bows-container{
+    font-family:'Courier New', Courier, monospace;
+    text-align: justify;
+    margin: 2%;
+    width: 50%;
+    float: left;
+
+
+}

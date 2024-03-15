@@ -12,7 +12,7 @@ public class Bows {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-   
+    private String name;
     private String autor;
     private String organizacao;
     private String localizado;
@@ -99,6 +99,6 @@ public class Bows {
    		Bows other = (Bows) obj;
    		return Objects.equals(name, other.name);
    	}
-   	private String name;
+   
   
 }

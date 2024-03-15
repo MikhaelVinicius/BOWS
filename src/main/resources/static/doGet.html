@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exibir Dados BOWS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>      
+        <h2 class="Titulo">Umbrella Database Busca</h2>
+        
+        
+        <div class="menu" id="register-button">
+            
+            <a>Registrar BOWS 
+            <ol id="menu-registrar" href="#" >
+                <div class="menu-registra-opcao"><a href="doPost.html">Registrar nova Bio-Arma</a></div>
+                <div class="menu-registra-opcao"><a>Registrar novo agente biólogico</a></div>
+                <div class="menu-registra-opcao"><a>Registrar antidotos, vacinas e antivírus</a></div>
+            </ol>
+        </a>
+        </div>
+        
+        <div class="menu" id="access-button">
+        
+            <a>Acessar dados de BOWS
+                <ol id="menu-acessar" href="#" >
+                    <div class="menu-acessar-opcao"><a >Acessar BOWS</a></div>
+                    <div class="menu-acessar-opcao"><a>Acessar espécimes acidentais</a></div>
+                </ol>
+            </a>
+        </div>
+        
+        <div class="menu" id="user-button">
+            <a>User 
+                <ol id="menu-user" href="#" >
+                    <div class="menu-user-opcao"><a>Registrar usuário</a></div>
+                    <div class="menu-user-opcao"><a>Login</a></div>
+                </ol>
+            </a>
+        </div>
+        
+        
+          
+        </header> 
+
+<div id="buscar-bows-container">
+    <label for="idInput">Digite o ID do BOWS:</label><br>
+    <input type="text" id="idInput" name="idInput"><br>
+    <button id="buscarBowsBtn">Buscar</button>
+    <div id="dados-bows-container">
+        
+    </div>
+</div>
+
+
+
+<div id="image-container">
+    <label for="fInfo"></label><br><br>
+    <input id="imageInput" type="image" src="imagens/umbrella.png" alt="Submit" width="48" height="48"></div>
+ </div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

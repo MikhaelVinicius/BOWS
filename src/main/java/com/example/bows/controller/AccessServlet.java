@@ -29,7 +29,7 @@ public class AccessServlet extends HttpServlet {
 
 
 
-		//Parei na implemetação do servlet nos metodos doGet etals, após isso devo testar mas preciso entender como a validação e usuario funciona, preciso tabem criar o banco de dados do User
+		
     
    
 
